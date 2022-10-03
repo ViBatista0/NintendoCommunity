@@ -1,0 +1,278 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;400&display=swap');
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+:root {
+    --main-color: rgba(255, 0, 0, 0.944);
+}
+
+.theme-text {
+    color: var(--main-color);
+}
+
+.navbar-brand {
+    color: var(--main-color) !important;
+}
+
+.act {
+    color: var(--main-color) !important;
+    border-bottom: 1px solid var(--main-color);
+}
+
+.navbar ul li a:hover {
+    color: var(--main-color) !important;
+    border-bottom: 1px solid var(--main-color);
+}
+
+.header {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../img/smario.webp);
+    width: 100%;
+    height: 100vh;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+.wave {
+    position: absolute;
+    bottom: 0px;
+}
+
+.middle {
+    height: 80vh;
+    width: 80%;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+
+.middle h1 {
+    font-size: 60px;
+
+}
+
+
+
+#navgame {
+    background-color: red;
+}
+
+#navgame a {
+    color: white !important;
+}
+
+.navbar ul li a:hover {
+    border-bottom: 1px solid yellow;
+}
+
+#navgames .act2 {
+    border-bottom: 1px solid var yellow;
+}
+
+.main {
+    background: #152238;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    gap: 2rem;
+
+
+}
+
+
+.carousel-item {
+    height: 95vh;
+    min-height: 300px;
+
+}
+
+.carousel-inner:before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+}
+
+.carouselgame {
+    background-size: cover !important;
+    background-position: center !important;
+}
+
+.sobre {
+    background-color: #00c3e3;
+    padding: 5% 5%;
+    width: 50%;
+    height: 50%;
+
+}
+
+.imgsobre {
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    display: inline-block;
+    -webkit-box-flex: 1;
+    -ms-flex: 1 1 42rem;
+    flex: 1 1 42rem;
+    padding-right: 5rem;
+    padding-bottom: 5rem;
+
+}
+
+.sobre .imgsobre img {
+    width: 100%;
+    -webkit-box-shadow: 2rem 2rem 0 rgba(0, 0, 0, 0.1);
+    box-shadow: 2rem 2rem 0 rgba(0, 0, 0, 0.1);
+}
+
+.imgsobre:before,
+.imgsobre:after {
+    content: '';
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    position: absolute;
+
+}
+
+.imgsobre img {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+
+}
+
+.textsobre {
+    -webkit-box-flex: 1;
+    -ms-flex: 1 1 42rem;
+    flex: 1 1 42rem;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+
+.main .textsobre h3 {
+    font-size: 3rem;
+    color: red;
+}
+
+.main .textsobre p {
+    font-size: 1.5rem;
+    color: #ffffff;
+    padding: 1rem 0;
+    line-height: 2;
+}
+
+
+.games {
+    background-color: rgb(255, 68, 68);
+    color: rgb(255, 255, 255);
+}
+
+.games .box-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    gap: 1.5rem;
+    padding-right: 5px;
+}
+
+.games .box-container .box {
+    text-align: center;
+    border: yellow;
+    padding: 2rem;
+}
+
+
+.games .box-container .box .image {
+    padding: 2.5rem 0;
+}
+
+.games .box-container .box .image img {
+    height: 300px;
+    width: 450px;
+    border-radius: 15px;
+}
+
+.games .box-container .box .content h3 {
+    color: rgb(255, 255, 255);
+    font-size: 30px;
+}
+
+.games .box-container .box .content .stars {
+    padding: 1.5rem;
+}
+
+.games .box-container .box .content .stars i {
+    font-size: 1.7rem;
+    color: yellow;
+}
+
+.heading {
+    text-align: center;
+    color: rgb(255, 255, 255);
+    text-transform: uppercase;
+    font-size: 4rem;
+    padding-top: 20px;
+}
+
+.footer {
+    background-color: black;
+}
+
+@media (max-width: 1200px) {
+    html {
+        align-items: center;
+        justify-content: center;
+    }
+
+    .sobre {
+        margin-left: 0;
+    }
+
+    .sobre {
+        width: 200%;
+        height: 200%;
+        align-items: center;
+
+    }
+
+    .carousel-inner {
+        background-position: center;
+        background-size: cover;
+        height: 290px;
+    }
+
+    .textsobre h3{
+        font-size: 30px !important;
+        padding-top: 10px;
+    }
+
+    .textsobre p{
+        font-size: 20px !important;
+    }
+
+    h1{
+        font-size: 30px !important;
+    }
+
+    h3{
+        font-size: 25px !important;
+    }
+}
